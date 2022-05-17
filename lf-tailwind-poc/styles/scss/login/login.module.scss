@@ -1,0 +1,118 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  .header {
+    height: 116px;
+    width: 100vw;
+  }
+  .content {
+    width: 100vw;
+    height: calc(100vh - 116px - 50px);
+    .leftContent {
+      width: 50vw;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .formContainer {
+        width: 36vw;
+        height: 45vh;
+        .formHeader {
+          width: 100%;
+          height: 18vh;
+          font: normal normal 800 70px/80px Montserrat;
+          .gradientHeader {
+            background: -webkit-linear-gradient(259deg, #0779C4 0%, #57A567 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .formContent {
+          width: 100%;
+          height: 15vh;
+          padding-left: .2vw;
+          font: normal normal medium 20px/24px Montserrat;
+          .labelContainer {
+            width: 100%;
+            height: auto;
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+          }
+          .inputContainer {
+            height: 70px;
+            input {
+              width: 70%;
+              height: 70px;
+              float: left;
+              box-shadow: 2px 3px 20px #0429421A;
+              border-right: none;
+              &:focus {
+                outline: none !important;
+                border-color: #719ECE;
+                box-shadow: 0 0 10px #719ECE;
+              }
+            }
+            button {
+              width: 20%;
+              height: 70px;
+              float: left;
+              margin-left: -12px;
+            }
+          }
+        }
+        .formFooter {
+          height: 2vh;
+          width: 100%;
+        }
+      }
+    }
+    .rightContent {
+      width: 50vw;
+      height: 100%;
+      float: left;
+      .rightContentImageContainer {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 7px;
+        }
+      }
+      .rightContentTextContainer {
+        width: 100%;
+        height: auto;
+        .rightTitleContainer {
+          width: 100%;
+          margin-top: 5vh;
+          margin-bottom: 5vh;
+        }
+        .rightPContainer {
+          width: 100%;
+          height: 23vh;
+        }
+      }
+      .rightActionContainer {
+        width: 100%;
+        height: 7vh;
+        .rightButtonContainer {
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          float: left;
+        }
+        .leftButtonContainer {
+          width: 20%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 50px;
+    width: 100vw;
+  }
+}
