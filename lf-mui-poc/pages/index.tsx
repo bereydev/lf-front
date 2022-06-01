@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import Head from 'next/head'
 import Box from '@mui/material/Box'
+import AppBar from '@mui/material/AppBar'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Stack from '@mui/material/Stack'
@@ -13,6 +15,8 @@ import { StyledEngineProvider } from '@mui/material/styles'
 
 import TextField from '@mui/material/TextField'
 import LoginField from '../components/LoginField'
+import IconButton from '@mui/material/IconButton'
+import Toolbar from '@mui/material/Toolbar'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -24,46 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Home: NextPage = () => {
   return (
-    <StyledEngineProvider injectFirst>
-      <Container maxWidth="xl">
-        <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Grid
-          justifyContent="center"
-          alignItems="center"
-          sx={{ flexGrow: 1, height: '100vh' }}
-          container
-          spacing={2}
-        >
-          <Grid item xs={12} md={6}>
-            <Grid item>
-              <Typography gutterBottom variant="h2" component="div">
-                Welcome back <br></br> to Logifleet 360°
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography gutterBottom variant="body1" component="div">
-                Log in to your Logifleet 360° account
-              </Typography>
-            </Grid>
-            <LoginField />
-
-            <Grid item>
-              <Typography gutterBottom variant="body1" component="div">
-                Don't have an account yet? Contact us!
-              </Typography>
-            </Grid>
-          </Grid>
-          <Grid item xs={6} sx={{ display: { md: 'block', xs: 'none' } }}>
-            <Grid container justifyContent="center">
-              <ImgCard />
-            </Grid>
-          </Grid>
-        </Grid>
-      </Container>
-    </StyledEngineProvider>
+<p>Index screen</p>
   )
 }
 
