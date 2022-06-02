@@ -8,6 +8,7 @@ import LoginField from '../components/LoginField'
 import GradientHeader from '../components/GradientHeader'
 import Footer from '../components/login/Footer'
 import Header from '../components/login/Header'
+import Head from 'next/head'
 
 function login() {
   return (
